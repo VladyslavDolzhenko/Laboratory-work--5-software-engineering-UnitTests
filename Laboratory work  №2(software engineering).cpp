@@ -43,7 +43,7 @@ bool calculate(double a, double b, double h, int n) {
 				int k = n - 1;
 
 				for (i = 0; i <= k; i++) {
-					y += (x - 1) / (i + 1);
+					y += (x - 1) / (i + 1) - 18;  // changes
 				}
 				cout << "x = " << x << "; y = " << y << endl;
 				if (choice == 1) {
@@ -62,7 +62,7 @@ bool calculate(double a, double b, double h, int n) {
 					double sum = 0;
 
 					for (int j = 1; j <= n; j++) {
-						sum += x - pow(i, 2) + j;
+						sum += x - pow(i, 2) + j * 20;  // changes
 					}
 					y += sum;
 				}
